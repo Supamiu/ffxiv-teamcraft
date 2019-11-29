@@ -2,7 +2,9 @@ import { Observable } from 'rxjs';
 import { ofPacketSubType } from '../rxjs/of-packet-subtype';
 import { buffer, debounceTime, map, tap } from 'rxjs/operators';
 import { DataReporter } from './data-reporter';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class DesynthResultReporter implements DataReporter {
 
   getDataReports(packets$: Observable<any>): Observable<any[]> {

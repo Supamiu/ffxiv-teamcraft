@@ -3,7 +3,9 @@ import { InventoryItem } from '../../../model/user/inventory/inventory-item';
 import { UserInventory } from '../../../model/user/inventory/user-inventory';
 import { ListRow } from '../../../modules/list/model/list-row';
 import { stackSizes } from '../../../core/data/sources/stack-sizes';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class HasTooFew extends InventoryOptimizer {
 
   static THRESHOLD_KEY = 'optimizer:has-few:threshold';

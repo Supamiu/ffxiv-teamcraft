@@ -8,7 +8,6 @@ import { RouterModule } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { NgSerializerModule } from '@kaiu/ng-serializer';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MarkdownModule } from 'ngx-markdown';
 import { NgDragDropModule } from 'ng-drag-drop';
 import { IS_ELECTRON, PlatformService } from './core/tools/platform.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -172,8 +171,6 @@ const nzConfig: NzConfig = {
   ],
   imports: [
     FlexLayoutModule,
-
-    MarkdownModule.forRoot(),
 
     NgDragDropModule.forRoot(),
 

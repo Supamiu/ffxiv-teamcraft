@@ -159,7 +159,7 @@ export class ItemRowComponent extends TeamcraftComponent implements OnInit {
 
   private list$: Observable<List> = this.listsFacade.selectedList$;
 
-  @ViewChild('inputElement', { static: false }) inputElement: ElementRef;
+  @ViewChild('inputElement') inputElement: ElementRef;
 
   amountInInventory$: Observable<{ containerName: string, amount: number, hq: boolean, isRetainer: boolean }[]> = this.item$.pipe(
     switchMap(item => {

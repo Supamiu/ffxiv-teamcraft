@@ -32,7 +32,7 @@ import { CoreModule } from '../../core/core.module';
   ]
 })
 export class SettingsModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SettingsModule> {
     return {
       ngModule: SettingsModule,
       providers: []
