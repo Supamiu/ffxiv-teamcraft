@@ -44,8 +44,7 @@
               "apps/client/src/cdk.less",
               "apps/client/src/styles.less",
               "apps/client/src/theme.less"
-            ],
-            "scripts": ["node_modules/marked/lib/marked.js"]
+            ]
           },
           "configurations": {
             "production": {
@@ -180,9 +179,14 @@
             "polyfills": "apps/client/src/polyfills.ts",
             "tsConfig": "apps/client/tsconfig.spec.json",
             "karmaConfig": "apps/client/karma.conf.js",
-            "styles": ["apps/client/src/styles.less"],
+            "styles": [
+              "apps/client/src/styles.less"
+            ],
             "scripts": [],
-            "assets": ["apps/client/src/favicon.ico", "apps/client/src/assets"]
+            "assets": [
+              "apps/client/src/favicon.ico",
+              "apps/client/src/assets"
+            ]
           }
         },
         "lint": {
@@ -192,7 +196,9 @@
               "apps/client/tsconfig.app.json",
               "apps/client/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "server": {
@@ -227,7 +233,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/client-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -238,7 +246,8 @@
       "typescriptMismatch": false,
       "versionMismatch": false
     },
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "c33e67a4-d65a-450f-8234-a48ab729efef"
   },
   "defaultProject": "client",
   "schematics": {

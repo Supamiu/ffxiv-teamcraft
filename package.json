@@ -188,7 +188,7 @@
     "@ngrx/store-devtools": "7.2.0",
     "ngrx-store-freeze": "0.2.4",
     "@angular-builders/custom-webpack": "^8.2.0",
-    "@angular-devkit/build-angular": "~0.900.0-rc.4",
+    "@angular-devkit/build-angular": "0.900.0-rc.4",
     "@angular-devkit/schematics": "^0.8.8",
     "@angular/cli": "~9.0.0-rc.4",
     "@angular/compiler-cli": "9.0.0-rc.4",
